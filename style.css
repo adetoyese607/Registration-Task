@@ -221,7 +221,7 @@ input:focus {
     }
     .right .last{
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 11px;
     }
     .right button[type=submit] {
         cursor: pointer;
