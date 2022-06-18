@@ -16,12 +16,6 @@ body {
 .error-icon {
     display: none;
 }
-.form-group.error .error-text,
-.form-group.error .error-icon{
-    display: 
-block;
-}
-
 .intro {
     min-height: 100vh;
     width: 100%;
@@ -32,13 +26,12 @@ block;
     background-color: hsl(0, 100%, 74%);
     padding: 100px 0;
 }
-
 .reg {
     display: flex;
     align-items: center;
     /* position: absolute; */
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     /* background-color: firebrick;  */
     padding: 0 30px;
@@ -46,68 +39,52 @@ block;
     margin: 0 auto;
 
 }
-
-.left {
+.left{
     flex: 1;
-    margin-bottom: 50px;
+    text-align: left;
+    padding-right: 50px; 
 }
-
-
-.left h1 {
+.left h1{
     color: white;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 48px;
+    line-height: 56px;
     margin-bottom: 15px;
-
 }
-
-.left p {
-      font-size: 18px;
+.left p{
+    font-size: 17px;
     color: white;
     line-height: 30px;
 }
 
 .right {
     flex: 1;
+    max-width: 500px;
 }
-
 .right .top {
-    padding: 15px 90px;
+    padding: 20px;
     background-color: hsl(248, 32%, 49%);
     color: #fff;
     border-radius: 15px;
     box-shadow: 0px 6px hsla(249, 10%, 28%, 49%);
     margin-bottom: 30px;
 }
-
 .top p {
-    font-size: 21px;
-    /* color: red; */
+    font-size:18px ;
     line-height: 35px;
 }
-
-p span {
-    font-weight: 700;
-}
-
-.right .col {
+.right .col{
+    padding: 40px;
     background-color: #fff;
-    padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 6px hsla(249, 10%, 26%, 0.404);
-
-
 }
-
 .form-group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
-
 .right label {
     display: none;
 }
-
 .right input,
 .right button[type=submit] {
     width: 100%;
@@ -128,7 +105,6 @@ input:focus {
 }
 
 .right button[type=submit] {
-    cursor: pointer;
     border: none;
     background-color: hsl(154, 59%, 51%);
     color: #fff;
@@ -144,87 +120,4 @@ input:focus {
 .right button[type=submit]:hover {
     background-color: hsl(154, 77%, 61%);
 
-}
-
-.right .last {
-    margin-top: 15px;
-    font-size: 15px;
-    color: hsl(246, 25%, 77%);
-    /* font-size: 14px; */
-}
-
-.last span {
-    color: hsl(0, 100%, 74%);
-}
-
-.error-icon{
-    /* display: block; */
-    position: absolute;
-    top: 28%;
-    right: 20px;
-}
-.error-text{
-    /* display: block; */
-    text-align: right;
-    font-size: 13px;
-    font-style: italic;
-    color: hsl(0, 100%, 74%);
-    font-weight: 500;
-}
-@media only screen and (min-width: 1000px){
-    .intro{
-        background-image: url(image/bg-intro-desktop.png);
-        /* height: 100vh; */
-    }
-    .reg{
-        flex-direction: row;
-       
-        
-    }
-    .left{
-        text-align: left;
-        margin-right: 20px;
-        padding-right: 100px;
-        /* background-color: firebrick; */
-        /* padding-bottom: 17px; */
-        
-    }
-    .left h1{
-        font-size: 48px;
-        line-height: 56px;
-    }
-    .left p{
-        font-size: 16px;
-        /* background-color: red; */
-        /* width: 550px; */
-        /* padding-right: 27px; */
-        /* margin: 10px; */
-    }
-    .right{
-        max-width: 500px;
-        
-
-        /* background-color: red; */
-    }
-    .right .top p{
-        font-size:18px ;
-    }
-    .right .top{
-        padding: 20px;
-    }
-    .right .col{
-        padding: 40px;
-    }
-    .right input,
-    .right input::placeholder{
-        font-size: 17px;
-    }
-    .right .last{
-        margin-top: 20px;
-        font-size: 12px;
-    }
-    .right button[type=submit] {
-        cursor: pointer;
-     font-size: 17px;
-    }
 }
